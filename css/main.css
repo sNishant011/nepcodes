@@ -68,9 +68,8 @@ nav {
 
 .menu {
   z-index: 0;
-  top: -200%;
+  top: -100%;
   position: absolute;
-  background: #005DFF;
   overflow: hidden;
   height: 100vh;
   width: 100%;
