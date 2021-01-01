@@ -83,7 +83,8 @@ nav {
 
 .menu .data ul {
   list-style-type: none;
-  padding-top: 5em;
+  padding-top: 0em;
+  margin: 0;
 }
 
 .menu .data ul li:first-child {
@@ -96,20 +97,11 @@ nav {
 .menu .data ul li:not(first-child) {
   color: transparent;
   font-size: 2rem;
-  margin-top: 2rem;
 }
 
 .menu .data ul li:not(first-child) a {
   font-family: 'Bungee Outline', cursive;
   right: 50px;
   color: #fff;
-}
-
-#font1 {
-  top: 50%;
-}
-
-#font2 {
-  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

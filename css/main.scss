@@ -93,7 +93,8 @@ nav{
        text-align: right;
        ul{
            list-style-type: none;
-           padding-top: 5em;
+           padding-top: 0em;
+           margin: 0;
             li:first-child{
                 color: color(primary-light);
                 text-decoration: underline;
@@ -104,7 +105,7 @@ nav{
                 
                 color: transparent;
                 font-size: 2rem;
-                margin-top: 2rem;
+
                 a{  
                     font-family: 'Bungee Outline', cursive;
                     right: 50px;
@@ -118,11 +119,4 @@ nav{
 
        }
    }
-}
-#font1{
-
-    top: 50%;
-}
-#font2{
-    font-family: 'Montserrat', sans-serif;
 }
