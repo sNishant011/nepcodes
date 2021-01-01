@@ -14,6 +14,8 @@ t1.to('.burger2', 0.8, {
 });
 t1.to('.menu', 2, {
     top: "0%",
+    background: "#005DFF",
+
     ease: Expo.easeInOut,
     delay: -2,
 });
