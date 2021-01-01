@@ -70,6 +70,7 @@ nav {
   z-index: 0;
   top: -100%;
   position: absolute;
+  background: #005DFF;
   overflow: hidden;
   height: 100vh;
   width: 100%;
@@ -95,6 +96,7 @@ nav {
 .menu .data ul li:not(first-child) {
   color: transparent;
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .menu .data ul li:not(first-child) a {
