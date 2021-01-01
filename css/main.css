@@ -1,107 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 body, html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
   width: 100%;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #ccdfff;
-  background-size: cover;
+  background-color: #ccdfff;
 }
 
 nav {
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 90px;
   width: 100vw;
-  background: #fff;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
 }
 
-.logo {
+nav .logo {
   position: absolute;
-  height: 60px;
-  width: 60px;
-  left: 0;
-  top: 0;
+  height: 80px;
+  padding: 0.5em;
+  width: 80px;
+  overflow: hidden;
 }
 
-.logo img {
+nav .logo img {
   height: 80px;
-  padding: 0.5em 0 0 1.5em;
-  width: 80px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.burgerbar {
-  position: fixed;
-  margin: 1.4em;
-  padding: 1em;
-  width: 40px;
-  height: 12px;
-  right: 0;
-  z-index: 1;
-}
-
-.burgerbar .burger1 {
-  position: absolute;
-  height: 2px;
-  width: 40px;
-  background-color: #000;
-}
-
-.burgerbar .burger2 {
-  position: absolute;
-  height: 2px;
-  width: 40px;
-  background-color: #000;
-  margin-top: 12px;
-}
-
-.menu {
-  z-index: 0;
-  top: -100%;
-  position: absolute;
-  background: #005DFF;
+nav .menu-btn {
+  z-index: 2000;
+  margin-top: 10px;
+  float: right;
+  height: 70px;
+  padding: 0.5em;
+  width: 70px;
   overflow: hidden;
-  height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 4%;
+  cursor: pointer;
+}
+
+nav .menu-btn .burger1, nav .menu-btn .burger2 {
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: #000;
+}
+
+nav .menu-btn .burger2 {
+  top: 35%;
+}
+
+.menu-overlay {
+  -webkit-clip-path: circle(0%);
+          clip-path: circle(0%);
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff6bb;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu .data {
-  padding: 5em 5em 2em 0em;
-  text-align: right;
+.menu-overlay #close {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
 }
 
-.menu .data ul {
+.menu-overlay ul {
   list-style-type: none;
-  padding-top: 0em;
-  margin: 0;
 }
 
-.menu .data ul li:first-child {
-  color: #ccdfff;
-  text-decoration: underline;
-  font-size: 24px;
-  font-family: 'Bungee Outline', cursive;
-}
-
-.menu .data ul li:not(first-child) {
-  color: transparent;
+.menu-overlay ul li {
+  opacity: 1;
+  text-align: center;
+  margin-right: 10px;
+  padding: 1rem;
   font-size: 2rem;
+  font-family: 'Staatliches', cursive;
 }
 
-.menu .data ul li:not(first-child) a {
-  font-family: 'Bungee Outline', cursive;
-  right: 50px;
-  color: #fff;
+.menu-overlay ul a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 1rem;
+  width: 300px;
+  text-decoration: none;
+  color: #001333;
+}
+
+.menu-overlay ul a:hover {
+  color: white;
+  background-color: #001333;
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 $colors: (
     primary: #005DFF,
@@ -22,101 +23,103 @@ $desktop: 840px;
     }
 }
 
+
 body, html{
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
-}
-body{    height: 100vh;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: color(primary-light);
-    background-size: cover;
+    background-color: color(primary-light);
 }
 nav{
+    position: fixed;
+    box-sizing: border-box;
     height: 90px;
     width: 100vw;
-    background: #fff;
-}
-.logo{
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    left: 0;
-    top:0;
-    img{
+    padding:1.5em;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    .logo{
+        position: absolute;
         height: 80px;
-        padding: 0.5em 0 0 1.5em;
+        padding:0.5em;
         width: 80px;
-        object-fit: cover;
+        overflow: hidden;
+        img{
+            height: 80px;
+            object-fit: cover;
+        }
+        
     }
-}
-.burgerbar{
-    position: fixed;
-    margin: 1.4em;
-    padding: 1em;
-    width: 40px;
-    height: 12px;
-    right: 0;
-    z-index: 1;
-
-    .burger1{
+    .menu-btn{
+        z-index: 2000;
+        margin-top: 10px;
+        float: right;
+        height: 70px;
+        padding:0.5em;
+        width: 70px;
+        overflow: hidden;
         position: absolute;
-        height: 2px;
-        width: 40px;
-        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right:4%;
+       cursor: pointer;
+        .burger1, .burger2{
+            position: absolute;
+            height: 3px;
+            width: 40px;
+            background-color: #000;
+        }
+        .burger2{
+            top:35%;
+        }
 
     }
-    .burger2{
-        position: absolute;
-        height: 2px;
-        width: 40px;
-        background-color: #000;
-        margin-top: 12px;
-    }
+
 }
-
-.menu{
-    z-index: 0;
-    top: -100%; 
-
-    position: absolute;
-    background: color(primary);
-    overflow: hidden;
-    height: 100vh;
+.menu-overlay{
+    clip-path: circle(0%);
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
-   .data{
-       padding: 5em 5em 2em 0em;
-       text-align: right;
-       ul{
-           list-style-type: none;
-           padding-top: 0em;
-           margin: 0;
-            li:first-child{
-                color: color(primary-light);
-                text-decoration: underline;
-                font-size: 24px;
-                font-family: 'Bungee Outline', cursive;
-            }   
-            li:not(first-child){ 
-                
-                color: transparent;
-                font-size: 2rem;
-
-                a{  
-                    font-family: 'Bungee Outline', cursive;
-                    right: 50px;
-                    color: #fff;
-
-                    
-                }
-
-
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #fff6bb;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #close{
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            opacity: 1;
+            text-align: center;
+            margin-right: 10px;
+            padding: 1rem;
+            font-size: 2rem;
+            font-family: 'Staatliches', cursive;
+            
+        }
+        a{                
+            transition:all 0.2s ease;
+            padding:1rem;
+            width: 300px;
+            text-decoration: none;
+            color: color(primary-dark);
+            &:hover{
+                color: white;
+                background-color: color(primary-dark);
+                border-radius: 0.2rem;
+                transition:all 0.5s ease;
             }
-
-       }
-   }
+        }
+    }
 }
