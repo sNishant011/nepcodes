@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
               <link rel="stylesheet" href="css/main.css">
     <title>Home | Nishant Shrestha</title>
@@ -26,6 +28,15 @@
       <li> <a href="#">Contact Me</a> </li>
     </ul>
   </div>
+  <div class="container">
+    <div class="info" data-aos="fade-right"
+    data-aos-anchor-placement="top-center" data-aos-duration="1000">
+      <h1>Hi! I'm<br><span id="textchange"></span></h1>
+    </div>
+    <img src="img/svg/webdev.svg"  data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="1000">
+  </div>
+    <script type="text/javascript" src="js/typewriter.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 <script>
   const openBtn = document.querySelector('.menu-btn');
@@ -43,6 +54,10 @@
   closeBtn.addEventListener('click', () => {
     tl.reverse();
   })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
   </body>
 </html>
