@@ -148,7 +148,10 @@ nav{
     height: auto;
     box-sizing: border-box;
     grid-template-columns: repeat(2,1fr);
+    grid-gap:1em;
     .info{
+        color:color(primary);
+        z-index: 10;
         width: 100%;
         height: 100%;
         h1{
@@ -161,11 +164,28 @@ nav{
         }
     }
     .img{
-        width: 100%;
+        z-index: 1;
+        position: absolute;
+        display: block;
         overflow: hidden;
+        width: 50vw;
+        top:5vh;
+        left: 50vw;
+        float: right;
+        @include mobile(){
+            width: 100vw;
+            left: 25vw;
+        }
+@include desktop(){
+    left: 60vw;
+}
         img{
-            height: 50vh;
-            width: 50vw;
+            object-fit: contain;
+            height: 30%;
+            width: 50%;
+            min-height:200px;
+            min-width: 200px;
+            right: 0;
         }
     }
 }

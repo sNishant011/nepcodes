@@ -150,9 +150,12 @@ nav .menu-btn .burger2 {
           box-sizing: border-box;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
 }
 
 .container .info {
+  color: #005DFF;
+  z-index: 10;
   width: 100%;
   height: 100%;
 }
@@ -168,13 +171,37 @@ nav .menu-btn .burger2 {
 }
 
 .container .img {
-  width: 100%;
+  z-index: 1;
+  position: absolute;
+  display: block;
   overflow: hidden;
+  width: 50vw;
+  top: 5vh;
+  left: 50vw;
+  float: right;
+}
+
+@media (max-width: 500px) {
+  .container .img {
+    width: 100vw;
+    left: 25vw;
+  }
+}
+
+@media (min-width: 840px) {
+  .container .img {
+    left: 60vw;
+  }
 }
 
 .container .img img {
-  height: 50vh;
-  width: 50vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 30%;
+  width: 50%;
+  min-height: 200px;
+  min-width: 200px;
+  right: 0;
 }
 
 .showcase {
