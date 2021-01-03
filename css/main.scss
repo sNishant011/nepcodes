@@ -17,17 +17,25 @@ $font: 'Montserrat', sans-serif;
 }
 
 $desktop: 840px;
-
+$mobile: 500px;
 @mixin desktop { 
     @media (min-width: #{$desktop}){
         @content;
     }
+}
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+
+    }
+    
 }
 
 
 body, html{
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -36,7 +44,7 @@ body, html{
 nav{
     position: fixed;
     box-sizing: border-box;
-    height: clamp(90px, 3em, 10em);
+    height: 12vh;
     width: 100vw;
     padding:1.5em;
     display: flex;
@@ -46,12 +54,12 @@ nav{
     top: 0;
     .logo{
         position: absolute;
-        height: 80px;
-        padding:0.5em;
-        width: 80px;
+        height: 8vh;
+        padding-top:0.5em;
+        width: 8vh;
         overflow: hidden;
         img{
-            height: 80px;
+            height: 8vh;
             object-fit: cover;
         }
         
@@ -72,7 +80,7 @@ nav{
        cursor: pointer;
         .burger1, .burger2{
             position: absolute;
-            height: 3px;
+            height: 0.2rem;
             width: 40px;
             background-color: #000;
         }
@@ -130,50 +138,48 @@ nav{
     }
 }
 .container{
-    position: absolute;
-    top:4.5em;
+    display: grid;
+    top:10vh;
+    position: relative;
     padding: 1em;
     margin: 1em;
     width: 90vw;
     overflow: hidden;
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
-
-    img{
-position: absolute;
-height: 40%;
-width: 30vw;
-min-width: 200px;
-overflow: hidden;
-top:-2em;
-right:1em;
-z-index: 1;
-@include desktop(){
-    top:3vh;
-    width: 500px;
-    height: 30%;
-}
-    }
+    grid-template-columns: repeat(2,1fr);
     .info{
-        margin-right: 2em;
-        box-sizing: border-box;
-        position: absolute;
-        font-family:$font;
-        z-index: 2;
-        color:color(primary);
-        width:100%;
-        left: 1em;
+        width: 100%;
+        height: 100%;
         h1{
-            font-family: 2em;
-            @include desktop(){
-                height: 100%;
-            }
+            font-family: $font;
+            font-size: clamp(2rem, 5vw, 5rem);
         }
-        p{            
-            padding:0.5em;
-
-            width: 100%;
-            overflow: hidden;
+        p{
+            font-family: $font;
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
         }
+    }
+    .img{
+        width: 100%;
+        overflow: hidden;
+        img{
+            height: 50vh;
+            width: 50vw;
+        }
+    }
+}
+.showcase{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #fbff;
+    margin-top: 30vh;
+    a{
+        letter-spacing: 0.1em;
+        font-size: 18px;
+        color: color(primary);
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: 0.5px solid #005DFF;
     }
 }

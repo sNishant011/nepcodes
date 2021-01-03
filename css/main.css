@@ -5,6 +5,7 @@ body, html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -15,7 +16,7 @@ nav {
   position: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: clamp(90px, 3em, 10em);
+  height: 12vh;
   width: 100vw;
   padding: 1.5em;
   display: -webkit-box;
@@ -31,14 +32,14 @@ nav {
 
 nav .logo {
   position: absolute;
-  height: 80px;
-  padding: 0.5em;
-  width: 80px;
+  height: 8vh;
+  padding-top: 0.5em;
+  width: 8vh;
   overflow: hidden;
 }
 
 nav .logo img {
-  height: 80px;
+  height: 8vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -67,7 +68,7 @@ nav .menu-btn {
 
 nav .menu-btn .burger1, nav .menu-btn .burger2 {
   position: absolute;
-  height: 3px;
+  height: 0.2rem;
   width: 40px;
   background-color: #000;
 }
@@ -136,61 +137,59 @@ nav .menu-btn .burger2 {
 }
 
 .container {
-  position: absolute;
-  top: 4.5em;
+  display: -ms-grid;
+  display: grid;
+  top: 10vh;
+  position: relative;
   padding: 1em;
   margin: 1em;
   width: 90vw;
   overflow: hidden;
-  height: 100%;
+  height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container img {
-  position: absolute;
-  height: 40%;
-  width: 30vw;
-  min-width: 200px;
-  overflow: hidden;
-  top: -2em;
-  right: 1em;
-  z-index: 1;
-}
-
-@media (min-width: 840px) {
-  .container img {
-    top: 3vh;
-    width: 500px;
-    height: 30%;
-  }
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .container .info {
-  margin-right: 2em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  font-family: "Montserrat", sans-serif;
-  z-index: 2;
-  color: #005DFF;
   width: 100%;
-  left: 1em;
+  height: 100%;
 }
 
 .container .info h1 {
-  font-family: 2em;
-}
-
-@media (min-width: 840px) {
-  .container .info h1 {
-    height: 100%;
-  }
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .container .info p {
-  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.container .img {
   width: 100%;
   overflow: hidden;
+}
+
+.container .img img {
+  height: 50vh;
+  width: 50vw;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #fbff;
+  margin-top: 30vh;
+}
+
+.showcase a {
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  color: #005DFF;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 0.5px solid #005DFF;
 }
 /*# sourceMappingURL=main.css.map */
