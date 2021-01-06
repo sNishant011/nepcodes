@@ -10,8 +10,8 @@ gsap.to(".skills", {
 });
 gsap.from(".showcase", {
     scrollTrigger: {
-        trigger: ".skills",
-        start: "bottom center",
+        trigger: ".showcase",
+        start: "top center",
         toggleActions: "restart play reverse reset"
     },
     backgroundColor: "#fff",

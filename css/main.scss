@@ -109,18 +109,20 @@ nav{
 
 }
 .menu-overlay{
+    top: 0;
     clip-path: circle(0%);
     min-height: 100vh;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
     background-color: #fff6bb;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+
     #close{
         font-size: clamp(30px, 5vw, 10vw);
 
