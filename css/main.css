@@ -289,7 +289,7 @@ nav .menu-btn .burger2 {
 
 @media (max-width: 600px) {
   .skills .myskills .card {
-    height: 68vh;
+    height: 60vh;
   }
 }
 
@@ -346,12 +346,7 @@ nav .menu-btn .burger2 {
   position: relative;
   height: auto;
   width: 100%;
-  background-color: #003899;
-}
-
-.showcase h1 {
-  text-decoration: underline;
-  color: #000;
+  background-color: #005DFF;
 }
 
 .showcase a {
@@ -360,7 +355,7 @@ nav .menu-btn .burger2 {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  background-color: #005DFF;
+  background-color: #003899;
   color: #fff;
   padding: 0.6em;
   margin: 0.4em;
@@ -407,7 +402,7 @@ nav .menu-btn .burger2 {
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  border: 5px solid #005DFF;
+  border: 5px solid #0b4fc4;
 }
 
 @media (min-width: 840px) {
