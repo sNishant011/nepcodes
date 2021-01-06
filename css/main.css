@@ -229,15 +229,128 @@ nav .menu-btn .burger2 {
   right: 0;
 }
 
-.showcase {
-  position: absolute;
+.skills {
+  position: relative;
   height: auto;
   width: 100%;
-  background-color: #003899;
+  color: #4d4dff;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
   margin-top: 20vh;
 }
 
+.skills .myskills {
+  margin: 1.5em 1.5em 0 1.5em;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  padding-bottom: 10vh;
+}
+
+@media (min-width: 840px) {
+  .skills .myskills {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills .myskills {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.skills .myskills .card {
+  color: #4d4dff;
+  background-color: #F5F5F5;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 0px solid white;
+}
+
+@media (min-width: 840px) {
+  .skills .myskills .card {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills .myskills .card {
+    height: 68vh;
+  }
+}
+
+.skills .myskills .card:hover {
+  border-radius: 8px;
+  -webkit-transition: border-radius 0s;
+  transition: border-radius 0s;
+  background-color: #ccdfff;
+}
+
+.skills .myskills .card:hover .card-img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.skills .myskills .card .card-img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .myskills .card .card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.skills .myskills .card .info {
+  margin-top: 1.5rem;
+  color: #4d4dff;
+}
+
+.skills .myskills .card .info h1 {
+  color: #4d4dff;
+  margin-left: 1rem;
+}
+
+.skills .myskills .card .info p {
+  color: #000;
+  margin: 1rem;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+.showcase {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #003899;
+}
+
 .showcase a {
+  cursor: pointer;
   position: absolute;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -254,33 +367,36 @@ nav .menu-btn .burger2 {
   text-decoration: underline;
 }
 
-.projects {
-  margin-top: 3rem;
+.showcase .projects {
+  margin: 3rem 1.5rem 1.5rem 1.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   justify-items: center;
 }
 
 @media (min-width: 840px) {
-  .projects {
+  .showcase .projects {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .projects {
+  .showcase .projects {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.projects .card {
-  height: 100%;
-  width: 85%;
+.showcase .projects .card {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  min-height: 100%;
+  height: 70vh;
+  width: 100%;
   background-color: #ccdfff;
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
@@ -289,18 +405,18 @@ nav .menu-btn .burger2 {
 }
 
 @media (min-width: 840px) {
-  .projects .card {
-    height: 60vh;
-  }
-}
-
-@media (max-width: 600px) {
-  .projects .card {
+  .showcase .projects .card {
     height: 70vh;
   }
 }
 
-.projects .card .card-img {
+@media (max-width: 600px) {
+  .showcase .projects .card {
+    height: 68vh;
+  }
+}
+
+.showcase .projects .card .card-img {
   width: 100%;
   height: 40%;
   overflow: hidden;
@@ -308,14 +424,14 @@ nav .menu-btn .burger2 {
   transition: all 0.5s ease;
 }
 
-.projects .card .card-img:hover img {
+.showcase .projects .card .card-img:hover img {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.projects .card .card-img img {
+.showcase .projects .card .card-img img {
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: all 0.5s ease;
@@ -326,22 +442,40 @@ nav .menu-btn .burger2 {
   height: 100%;
 }
 
-.projects .card .info {
+.showcase .projects .card .info {
   margin-left: 0.4rem;
+  margin-right: 0.4rem;
   height: 50%;
   font-family: "Montserrat", sans-serif;
   color: #005DFF;
 }
 
-.projects .card .info h1 {
+.showcase .projects .card .info h1 {
   margin: 0;
   letter-spacing: 0.04rem;
   margin-top: 0.5rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.projects .card .info p {
+.showcase .projects .card .info a {
+  all: initial;
+  position: relative;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background-color: #005DFF;
+  color: #fff;
+  padding: 0.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 2rem;
+}
+
+.showcase .projects .card .info p {
   font-size: 0.9rem;
 }
 /*# sourceMappingURL=main.css.map */
