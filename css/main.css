@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 body, html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -125,12 +126,12 @@ nav .menu-btn .burger2 {
   padding: 1rem;
   width: 300px;
   text-decoration: none;
-  color: #001333;
+  color: #003899;
 }
 
 .menu-overlay ul a:hover {
   color: white;
-  background-color: #001333;
+  background-color: #003899;
   border-radius: 0.2rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -144,6 +145,7 @@ nav .menu-btn .burger2 {
   padding: 1em;
   margin: 1em;
   width: 90vw;
+  height: 70vh;
   overflow: hidden;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -155,8 +157,8 @@ nav .menu-btn .burger2 {
 
 .container .info {
   color: #005DFF;
-  z-index: 10;
-  width: 100%;
+  z-index: 2;
+  width: 90vw;
   height: 100%;
 }
 
@@ -166,6 +168,10 @@ nav .menu-btn .burger2 {
 }
 
 .container .info p {
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
@@ -181,7 +187,7 @@ nav .menu-btn .burger2 {
   float: right;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .container .img {
     width: 100vw;
     left: 25vw;
@@ -205,18 +211,118 @@ nav .menu-btn .burger2 {
 }
 
 .showcase {
-  position: relative;
-  height: 100vh;
+  position: absolute;
+  height: auto;
   width: 100%;
-  background-color: #fbff;
-  margin-top: 30vh;
+  background-color: #003899;
+  margin-top: 20vh;
 }
 
 .showcase a {
-  letter-spacing: 0.1em;
-  font-size: 18px;
+  position: absolute;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background-color: #005DFF;
+  color: #fff;
+  padding: 0.6em;
+  margin: 0.4em;
+  margin-top: 0;
+  border-radius: 20px;
+}
+
+.showcase a:hover {
+  text-decoration: underline;
+}
+
+.projects {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+@media (min-width: 840px) {
+  .projects {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.projects .card {
+  height: 100%;
+  width: 85%;
+  background-color: #ccdfff;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 5px solid #005DFF;
+}
+
+@media (min-width: 840px) {
+  .projects .card {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects .card {
+    height: 70vh;
+  }
+}
+
+.projects .card .card-img {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.projects .card .card-img:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.projects .card .card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  width: 100%;
+  height: 100%;
+}
+
+.projects .card .info {
+  margin-left: 0.4rem;
+  height: 50%;
+  font-family: "Montserrat", sans-serif;
   color: #005DFF;
-  font-family: 'Montserrat', sans-serif;
-  border-bottom: 0.5px solid #005DFF;
+}
+
+.projects .card .info h1 {
+  margin: 0;
+  letter-spacing: 0.04rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.projects .card .info p {
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=main.css.map */
