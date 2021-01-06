@@ -28,8 +28,8 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   background-color: #ccdfff;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -235,7 +235,7 @@ nav .menu-btn .burger2 {
   width: 100%;
   color: #4d4dff;
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: #ccdfff;
   margin-top: 20vh;
 }
 
@@ -344,9 +344,14 @@ nav .menu-btn .burger2 {
 
 .showcase {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: #003899;
+}
+
+.showcase h1 {
+  text-decoration: underline;
+  color: #000;
 }
 
 .showcase a {
@@ -406,13 +411,13 @@ nav .menu-btn .burger2 {
 
 @media (min-width: 840px) {
   .showcase .projects .card {
-    height: 70vh;
+    height: 65  vh;
   }
 }
 
 @media (max-width: 600px) {
   .showcase .projects .card {
-    height: 68vh;
+    height: 60vh;
   }
 }
 
@@ -451,6 +456,7 @@ nav .menu-btn .burger2 {
 }
 
 .showcase .projects .card .info h1 {
+  color: #005DFF;
   margin: 0;
   letter-spacing: 0.04rem;
   margin-top: 0.5rem;
