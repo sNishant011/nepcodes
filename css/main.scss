@@ -69,6 +69,7 @@ nav{
     background-color: #fff;
     z-index: 9;
     top: 0;
+    transition:all 0.5s ease;
     .logo{
         position: absolute;
         height: 8vh;
@@ -221,6 +222,10 @@ nav{
     font-family: $font;
     background-color:color(primary-light);
     margin-top: 20vh;
+    @include desktop(){
+        max-height: 100vh;
+        overflow: hidden;
+    }
     .myskills{
         margin:1.5em 1.5em 0 1.5em;
 
@@ -300,8 +305,13 @@ nav{
     position: relative;
     height: auto;
     width: 100%;
+    overflow: hidden;
     background-color: color(primary);
     
+    @include desktop(){
+        height: 100vh;
+        overflow: hidden;
+    }
     a{
         cursor: pointer;
         position: absolute;
@@ -404,4 +414,20 @@ nav{
             }
         }
     }
+}
+.companies{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);    
+    h1{
+        box-sizing: border-box;
+        text-align: center;
+        padding: 1rem;
+        letter-spacing: none;
+        margin: 0;
+        font-size: clamp(2rem, 3vw, 5rem);
+        font-family: 'Montserrat', sans-serif;
+        color: #005DFF;
+   }
 }
