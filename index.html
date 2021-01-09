@@ -137,6 +137,40 @@
   <img src="img/other/SNPhotoslogo.png" id="snphotosl">
   <img src="img/other/logo.png" id="nepcodel">
   <img src="img/other/en.png" id="envisionerl">
+  <a href="#">Hire me?</a>
+  </div>
+  <div class="messagesection">
+    <h1>Send a Message</h1>
+  <div class="message">
+    <div class="messageimg"><img src="img/other/postit-1975188_1920.png" alt="img"> </div>
+    <div class="messageform">
+      <h1 style="font-size:clamp(30px, 2.5rem, 3.5vw);">Get in Touch</h1>
+     <form action="#">
+      <center><input type="text" placeholder="Name" name="name" required>
+      <input type="email" placeholder="Email" name="email" required>
+      <input type="text" placeholder="Message" name="message" required style="height: 3rem;">
+      <br><button type="submit">Send</button>
+
+    </center>
+  </form>
+    </div>
+  </div></div>
+  <div class="footer">
+    <div class="logo-quote">
+      <center><img src="img/other/whitelogo.png"><p>Happy Coding. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> </center>  </div>
+    <div class="navigations">
+      <a href="#"> <li>Home</li> </a>
+      <a href="#"> <li>My Portfolio</li> </a>
+      <a href="#"> <li>About Me</li> </a>
+      <a href="#"> <li>Contact Me</li> </a>
+    </div>
+    <div class="social-links">
+      
+      <a href="#"> <li>Facebook</li> </a>
+      <a href="#"> <li>Instagram</li> </a>
+      <a href="#"> <li>Upwork</li> </a>
+      <a href="#"> <li>Youtube</li> </a>
+    </div>
   </div>
   <script type="text/javascript">
   var prevScrollpos = window.pageYOffset;
@@ -160,7 +194,7 @@ var currentScrollPos = window.pageYOffset;
   tl.paused(true);
   tl.to(".menu-overlay",1, {clipPath: 'circle(100%)'})
 
-  tl.from("li",1, {opacity:0, x:'100px', stagger:0.5}, "-=1")
+  tl.from("ul li",1, {opacity:0, x:'100px', stagger:0.5}, "-=1")
 
   openBtn.addEventListener('click', () => {
     tl.play();
