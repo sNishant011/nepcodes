@@ -358,6 +358,7 @@ nav .menu-btn .burger2 {
   width: 100%;
   overflow: hidden;
   background-color: #005DFF;
+  color: #fff;
 }
 
 @media (min-width: 840px) {
@@ -502,6 +503,7 @@ nav .menu-btn .burger2 {
 .companies {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -517,5 +519,52 @@ nav .menu-btn .burger2 {
   font-size: clamp(2rem, 3vw, 5rem);
   font-family: 'Montserrat', sans-serif;
   color: #005DFF;
+}
+
+.companies img {
+  position: absolute;
+  height: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25%;
+}
+
+.companies #ebakeryl {
+  -webkit-transform: translate(39vw, 42vh);
+          transform: translate(39vw, 42vh);
+}
+
+.companies #envisionerl {
+  -webkit-transform: translate(38vw, 20vh);
+          transform: translate(38vw, 20vh);
+}
+
+.companies #snphotosl {
+  -webkit-transform: translate(10vw, 10vh);
+          transform: translate(10vw, 10vh);
+}
+
+.companies #nepcodel {
+  -webkit-transform: translate(64vw, 8vh);
+          transform: translate(64vw, 8vh);
+}
+
+@media (min-width: 840px) {
+  .companies #ebakeryl {
+    -webkit-transform: translate(38.5vw, 45vh);
+            transform: translate(38.5vw, 45vh);
+  }
+  .companies #envisionerl {
+    -webkit-transform: translate(38vw, 20vh);
+            transform: translate(38vw, 20vh);
+  }
+  .companies #snphotosl {
+    -webkit-transform: translate(20vw, 10vh);
+            transform: translate(20vw, 10vh);
+  }
+  .companies #nepcodel {
+    -webkit-transform: translate(55vw, 8vh);
+            transform: translate(55vw, 8vh);
+  }
 }
 /*# sourceMappingURL=main.css.map */
