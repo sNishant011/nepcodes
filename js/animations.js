@@ -48,9 +48,9 @@ gsap.from(".projects .card", {
 var gallerytl = gsap.timeline({
     scrollTrigger: {
         trigger: ".companies",
-        scrub: true,
-        pin: true,
-        start: "top top",
+        start: "top center",
+        toggleActions: "restart none none none",
+
     }
 });
 
@@ -58,14 +58,14 @@ gallerytl.from("#envisionerl", {
     scale: 0.3,
     autoAlpha: 0,
     ease: "slow",
-    duration: 10,
+    duration: 1,
 })
 var insertpos = gallerytl.duration();
 gallerytl.from("#snphotosl", {
     scale: 0.3,
     autoAlpha: 0,
     ease: "slow",
-    duration: 10,
+    duration: 1,
     visibility: "visible",
     x: "-15vw",
     y: "-10vh",
@@ -75,7 +75,7 @@ gallerytl.from("#nepcodel", {
     scale: 0.3,
     autoAlpha: 0,
     ease: "slow",
-    duration: 10,
+    duration: 1,
     visibility: "visible",
     x: "80vw",
     y: "-10vh",
@@ -85,7 +85,7 @@ gallerytl.from("#ebakeryl", {
     scale: 0.3,
     autoAlpha: 0,
     ease: "slow",
-    duration: 10,
+    duration: 1,
     visibility: "visible",
     y: "60vh",
 }, (insertpos -= 0.5))
