@@ -348,14 +348,19 @@ nav{
         .card{
             box-sizing: border-box;
             min-height: 100%;
-            height: 70vh;
+            height: 100%;
             width: 100%;
-            background-color: color(primary-light);
-            overflow: hidden;
+            background: rgba( 255, 255, 255, 0.20 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 6.5px );
+            -webkit-backdrop-filter: blur( 6.5px );
+            border-radius: 10px;
             transition:all 0.5s ease;
-            border: 5px solid #0b4fc4;
+            border-radius: 15px;
+            overflow: hidden;
+           
             @include desktop(){
-                height: 65  vh;
+                height: 65vh;
             }
             @include mobile(){
                 height: 60vh;
@@ -381,14 +386,17 @@ nav{
             
             }
             .info{
-                margin-left: 0.4rem;
+                overflow-x: hidden;
+                box-sizing: border-box;
+                margin-left: 1rem;
+                margin-top: 1rem;
                 margin-right: 0.4rem;
     
-                height: 50%;
+                height: 60%;
                 font-family: $font;
-                color: color(primary);
+                color: #fff;
                 h1{
-                    color: color(primary);
+                    color: #fff;
                     margin: 0;
                     letter-spacing: 0.04rem;
                     margin-top: 0.5rem;
@@ -401,8 +409,8 @@ nav{
             font-size: 14px;
             font-family: $font;
             text-decoration: none;
-            background-color: color(primary);
-            color: #fff;
+            background-color: #fff;
+            color: #005DFF;
             padding:0.5em;
             padding-left: 1rem;
             padding-right: 1rem;
@@ -435,17 +443,27 @@ nav{
         color: #005DFF;
    }
    a{
-        position: absolute;
-        text-align: center;
-        top: 80vh;
-        right:10vw;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 1em 2em 1em 2em;
+    background-color: color(primary);
+    border-radius: 25px;
+    top:60vh;
+    right: 2vw;
+    transition: 0.5s ease;
+
+    float: right;
+    &:hover{
+        transition: 0.5s ease;               transform: translateY(-10px);
+        transform: translateY(-10px);
         box-sizing: border-box;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        padding: 1em 2em 1em 2em;
-        background-color: color(primary);
-        border-radius: 25px;
+        box-shadow: -0px 5px 0px #4086ff;
+
+        }
    }
    img{
         
@@ -559,7 +577,14 @@ nav{
         float: left;
         margin-left: 30px;
         margin-top: 0.5rem;
+        transition: 0.5s ease;
         cursor: pointer;
+        &:hover{
+            transition: 0.5s ease;               transform: translateY(-10px);
+            transform: translateY(-5px);
+            box-sizing: border-box;
+            box-shadow: -0px 5px 0px #4d4dff;
+        }
                 }
             }
         }
@@ -595,7 +620,7 @@ nav{
     }
     .logo-quote{
         justify-items: center;
-        text-align: left;
+        text-align: center;
         color: #fff;
         font-family: $font;
         font-size: 1rem;
@@ -605,7 +630,7 @@ nav{
             object-fit: contain;
         }
         p{
-            text-align: left;
+            text-align: center;
         }
 
     }
