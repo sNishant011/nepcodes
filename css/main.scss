@@ -130,8 +130,13 @@ nav{
         font-size: clamp(30px, 5vw, 10vw);
 
         position: absolute;
-        top: 0;
+        top: 10px;
+        right: 40px;
         cursor: pointer;
+        @include desktop(){
+            top:20px;
+            right: 75px;
+        }
     }
     ul{
         list-style-type: none;
@@ -312,7 +317,6 @@ nav{
     color: #fff;
 
     @include desktop(){
-        height: 100vh;
         overflow: hidden;
     }
     a{
@@ -411,13 +415,22 @@ nav{
             text-decoration: none;
             background-color: #fff;
             color: #005DFF;
-            padding:0.5em;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding:0.8em;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
             border-radius: 20px;
             cursor: pointer;
             float: right;
             margin-right: 2rem;
+            transition: 0.3s ease;
+            &:hover{
+                transition: 0.3s ease;
+                background-color: color(primary);
+                color: #fff;
+                transform: translateY(-5px);
+                box-sizing: border-box;
+                box-shadow: -0px 5px 0px #4d4dff;
+            }
                 }
                 p{
                     font-size: 0.9rem;
@@ -458,7 +471,7 @@ nav{
 
     float: right;
     &:hover{
-        transition: 0.5s ease;               transform: translateY(-10px);
+        transition: 0.5s ease;               
         transform: translateY(-10px);
         box-sizing: border-box;
         box-shadow: -0px 5px 0px #4086ff;
@@ -638,5 +651,33 @@ nav{
         margin-left: 1rem;
         color: #fff;
         
+    }
+}
+#hire-me{
+    float: right;
+     right: 2%;
+    top: 25%;
+    border-radius: 50px; 
+    color: black; 
+    position: fixed; 
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    padding:1em; 
+    transition: 0.3s ease;
+
+    padding-right: 1.4em; 
+    padding-left: 1.4em; 
+    font-size: 1em; 
+    z-index: 3;
+    @include desktop(){
+        top: 20%;
+
+    }
+    &:hover{
+        background: rgba( 0, 93, 255, 0.5 );
+        transition: 0.3s ease;
+        color: #fff;
     }
 }

@@ -31,19 +31,6 @@ gsap.from(".myskills .card", {
 
 });
 
-gsap.from(".projects .card", {
-    scrollTrigger:{
-        trigger: ".projects",
-        start: "top bottom",
-        toggleActions: "restart none none none",
-
-    },
-    opacity:0,
-    y:300,
-    duration:0.5,
-    stagger:0.25,
-
-});
 
 var gallerytl = gsap.timeline({
     scrollTrigger: {
