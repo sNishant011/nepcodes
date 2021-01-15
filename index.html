@@ -13,7 +13,7 @@
 </head>
 <body> 
   <nav id="navbar">
-    <div class="logo"> <img src="img/logo.png"> </div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"> </a> </div>
     <div class="menu-btn">
       <span class="burger1"></span>
       <span class="burger2"></span>
@@ -22,13 +22,13 @@
   <div class="menu-overlay">
     <span id="close" style="font-size: 2rem;">&#10006</span>
     <ul>
-      <li> <a href="#">Home</a> </li>
+      <li> <a href="index.html">Home</a> </li>
       <li> <a href="portfolio.html">My Portfolio</a> </li>
-      <li> <a href="#">About Me</a> </li>
-      <li> <a href="#">Contact Me</a> </li>
+      <li> <a href="about.html">About Me</a> </li>
+      <li> <a href="contact.html">Contact Me</a> </li>
     </ul>
   </div>
-  <div class="container">
+  <div class="container"  style="background-image: url(img/workplace.jpg); background-size: cover; background-attachment: fixed; background-position: center;">
     
 
     <div class="info" data-aos="fade-right"
@@ -145,14 +145,28 @@
     <div class="messageimg"><img src="img/other/postit-1975188_1920.png" alt="img"> </div>
     <div class="messageform">
       <h1 style="font-size:clamp(30px, 2.5rem, 3.5vw);">Get in Touch</h1>
-     <form action="#">
-      <center><input type="text" placeholder="Name" name="name" required>
-      <input type="email" placeholder="Email" name="email" required>
-      <input type="text" placeholder="Message" name="message" required style="height: 3rem;">
-      <br><button type="submit">Send</button>
+      <div class="form-wrapper">
 
-    </center>
-  </form>
+        <form action="" class="form">
+          <div class="form-group">
+            <label class="form-label" for="first">Name</label>
+            <input id="first" class="form-input" type="text" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last">Email</label>
+            <input id="last" type="email" class="form-input"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="color">Phone</label>
+            <input id="color" type="tel" class="form-input" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="color">Your Message</label>
+            <input id="color" type="text" class="form-input" required/>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div></div>
   <div class="footer">
@@ -202,6 +216,20 @@ var currentScrollPos = window.pageYOffset;
   closeBtn.addEventListener('click', () => {
     tl.reverse();
   })
+</script><script>
+  $('input').focus(function(){
+  $(this).parents('.form-group').addClass('focused');
+});
+
+$('input').blur(function(){
+  var inputValue = $(this).val();
+  if ( inputValue == "" ) {
+    $(this).removeClass('filled');
+    $(this).parents('.form-group').removeClass('focused');  
+  } else {
+    $(this).addClass('filled');
+  }
+})  
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script type="text/javascript" src="js/animations.js"></script>

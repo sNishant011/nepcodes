@@ -38,7 +38,7 @@ nav {
   position: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 12vh;
+  height: 10vh;
   width: 100vw;
   padding: 1.5em;
   display: -webkit-box;
@@ -169,15 +169,31 @@ nav .menu-btn .burger2 {
   transition: all 0.5s ease;
 }
 
+.aboutme-container {
+  background-image: url(../img/workplace.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.aboutme-container h1 {
+  text-align: center;
+  font-size: clamp(30px, 4vw, 5vw);
+  font-family: 'Montserrat', sans-serif;
+  color: #fff6bb;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
   top: 10vh;
   position: relative;
   padding: 1em;
-  margin: 1em;
-  width: 90vw;
-  height: 70vh;
+  margin: 0em;
+  width: 100%;
   overflow: hidden;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -249,7 +265,7 @@ nav .menu-btn .burger2 {
   color: #4d4dff;
   font-family: "Montserrat", sans-serif;
   background-color: #ccdfff;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 @media (min-width: 840px) {
@@ -295,7 +311,7 @@ nav .menu-btn .burger2 {
           box-sizing: content-box;
   min-height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 0px solid white;
@@ -303,13 +319,13 @@ nav .menu-btn .burger2 {
 
 @media (min-width: 840px) {
   .skills .myskills .card {
-    height: 60vh;
+    height: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .skills .myskills .card {
-    height: 60vh;
+    height: 100%;
   }
 }
 
@@ -346,6 +362,7 @@ nav .menu-btn .burger2 {
 }
 
 .skills .myskills .card .info {
+  height: auto;
   margin-top: 1.5rem;
   color: #4d4dff;
 }
@@ -424,7 +441,6 @@ nav .menu-btn .burger2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100%;
-  height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -435,18 +451,18 @@ nav .menu-btn .burger2 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 15px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (min-width: 840px) {
   .showcase .projects .card {
-    height: 65vh;
+    height: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .showcase .projects .card {
-    height: 60vh;
+    height: 100%;
   }
 }
 
@@ -481,9 +497,9 @@ nav .menu-btn .burger2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 1rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
   margin-right: 0.4rem;
-  height: 60%;
+  height: auto;
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
@@ -687,10 +703,6 @@ nav .menu-btn .burger2 {
 .messagesection .message .messageform {
   width: 100%;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
 }
 
 .messagesection .message .messageform input {
@@ -699,11 +711,9 @@ nav .menu-btn .burger2 {
   padding: 1rem;
   margin: 0.5rem;
   outline: none;
-  font-size: 1.3rem;
-  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
   color: black;
-  background: #fff;
-  border-radius: 4px;
+  background: transparent;
   border: 1px solid #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -715,15 +725,14 @@ nav .menu-btn .burger2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   color: #fff;
   padding: 1em 2em 1em 2em;
   background-color: #005DFF;
   border-radius: 25px;
   border: none;
-  float: left;
   margin-left: 30px;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   cursor: pointer;
@@ -740,6 +749,71 @@ nav .menu-btn .burger2 {
           box-sizing: border-box;
   -webkit-box-shadow: -0px 5px 0px #4d4dff;
           box-shadow: -0px 5px 0px #4d4dff;
+}
+
+.messagesection .message .messageform .form-wrapper {
+  font-family: 'Jost', sans-serif;
+  max-width: 90%;
+  min-width: 300px;
+  padding: 50px 30px 50px 30px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.messagesection .message .messageform .form-group {
+  position: relative;
+}
+
+.messagesection .message .messageform .form-group + .form-group {
+  margin-top: 30px;
+}
+
+.messagesection .message .messageform .form-label {
+  position: absolute;
+  left: 20px;
+  font-size: 1.1rem;
+  top: 20px;
+  color: #999;
+  background-color: transparent;
+  z-index: 1;
+  -webkit-transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.messagesection .message .messageform .focused .form-label {
+  -webkit-transform: translateY(-125%);
+          transform: translateY(-125%);
+  font-size: .9em;
+}
+
+.messagesection .message .messageform .form-input {
+  position: relative;
+  padding: 12px 0px 5px 10px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  z-index: 2;
+  -webkit-box-shadow: 0 1px 0 0 #e5e5e5;
+          box-shadow: 0 1px 0 0 #e5e5e5;
+  -webkit-transition: -webkit-box-shadow 150ms ease-out;
+  transition: -webkit-box-shadow 150ms ease-out;
+  transition: box-shadow 150ms ease-out;
+  transition: box-shadow 150ms ease-out, -webkit-box-shadow 150ms ease-out;
+}
+
+.messagesection .message .messageform .form-input:focus {
+  -webkit-box-shadow: 0 2px 0 0 blue;
+          box-shadow: 0 2px 0 0 blue;
+}
+
+.messagesection .message .messageform .form-input.filled {
+  -webkit-box-shadow: 0 2px 0 0 lightgreen;
+          box-shadow: 0 2px 0 0 lightgreen;
 }
 
 .footer {
