@@ -16,4 +16,3 @@ typewriter.typeString('Nishant.')
     .typeString('A web  designer.')
     .pauseFor(1000)
     .start()
-

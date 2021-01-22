@@ -30,7 +30,14 @@
   </div>
   <div class="aboutme-container">
   <h1 style="margin-top: 10vh;">About Me</h1>
+<div class="brief-info">
+  <p>
+    <span id="hichange"></span><br>  <img src="img/mypic.jpg">
+    <br> My name is Nishant Shrestha. I am an emerging web developer & designer. I'm a self made passion fueled developer always wanting to enter in the world of awesome website building.
+    I'm currently a student with the view and ability of doing web projects.
+  </p>
 </div>
+  </div>
   <div class="messagesection">
     <h1>Send a Message</h1>
   <div class="message">
@@ -130,6 +137,26 @@ $('input').blur(function(){
   AOS.init();
 </script>
 <script src="js/smooth-scroll.js"></script>
+<script src="js/typewriter.js"></script>
+<script>
+  var text = document.getElementById('hichange');
 
+var typewriter = new Typewriter(text, {
+    loop: true
+});
+
+typewriter.typeString('Hi!')
+
+    .pauseFor(500)
+    .deleteAll()
+
+    .typeString('Ola!')
+    .pauseFor(500)
+    .deleteAll()
+
+    .typeString('Konnichiwa!')
+    .pauseFor(500)
+    .start()
+</script>
   </body>
 </html>

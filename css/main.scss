@@ -165,18 +165,48 @@ nav{
     }
 }
 .aboutme-container{
-    background-image: url(../img/workplace.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+    background-color: #005DFF;
+    height: auto;
     width: 100%;
     overflow-x: hidden;
     h1{ 
         text-align: center;
         font-size: clamp(30px, 4vw, 5vw);
         font-family: 'Montserrat', sans-serif;
-        color: #fff6bb;
+        color: rgb(255, 255, 255);
+        margin: 0;
+    }
+    .brief-info{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        p{
+            padding: 1rem;
+            font-size: .75rem;
+            width: 90%;
+            img{
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            @include desktop(){
+                font-size: 1.55rem;
+                width: 50%;
+            }
+        }
+        #hichange{
+            margin-bottom: 0.5rem;
+            font-size: clamp(30px, 4rem, 4vw);
+            &:hover{
+                text-decoration: underline;
+                transition: 0.5s ease;
+            }
+        }
+
     }
 }
 .container{
@@ -611,8 +641,7 @@ nav{
 .form-wrapper {
     font-family: 'Jost', sans-serif;
 
-    max-width: 90%;
-    min-width: 300px;
+    width: 90%;
     padding: 50px 30px 50px 30px;
     margin: 50px auto;   
     background-color: #fff;
@@ -648,7 +677,7 @@ nav{
   .form-input {
     position: relative;
     padding: 12px 0px 5px 10px;
-    width: 100%;
+    width: 90%;
     outline: 0;
     border: 0;
     z-index: 2;

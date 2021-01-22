@@ -170,11 +170,8 @@ nav .menu-btn .burger2 {
 }
 
 .aboutme-container {
-  background-image: url(../img/workplace.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
+  background-color: #005DFF;
+  height: auto;
   width: 100%;
   overflow-x: hidden;
 }
@@ -183,7 +180,55 @@ nav .menu-btn .burger2 {
   text-align: center;
   font-size: clamp(30px, 4vw, 5vw);
   font-family: 'Montserrat', sans-serif;
-  color: #fff6bb;
+  color: white;
+  margin: 0;
+}
+
+.aboutme-container .brief-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.aboutme-container .brief-info p {
+  padding: 1rem;
+  font-size: .75rem;
+  width: 90%;
+}
+
+.aboutme-container .brief-info p img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (min-width: 840px) {
+  .aboutme-container .brief-info p {
+    font-size: 1.55rem;
+    width: 50%;
+  }
+}
+
+.aboutme-container .brief-info #hichange {
+  margin-bottom: 0.5rem;
+  font-size: clamp(30px, 4rem, 4vw);
+}
+
+.aboutme-container .brief-info #hichange:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .container {
@@ -753,8 +798,7 @@ nav .menu-btn .burger2 {
 
 .messagesection .message .messageform .form-wrapper {
   font-family: 'Jost', sans-serif;
-  max-width: 90%;
-  min-width: 300px;
+  width: 90%;
   padding: 50px 30px 50px 30px;
   margin: 50px auto;
   background-color: #fff;
@@ -794,7 +838,7 @@ nav .menu-btn .burger2 {
 .messagesection .message .messageform .form-input {
   position: relative;
   padding: 12px 0px 5px 10px;
-  width: 100%;
+  width: 90%;
   outline: 0;
   border: 0;
   z-index: 2;
