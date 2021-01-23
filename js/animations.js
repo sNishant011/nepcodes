@@ -1,4 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.to("#hire-me",{
+    scrollTrigger:{
+        trigger: ".messagesection",
+        start: "top top",
+        toggleActions: "restart play reverse reset"
+    },
+    color: "#005DFF",
+    duration:1,
+});
 gsap.to(".skills", {
     scrollTrigger: {
         trigger: ".container .img",
