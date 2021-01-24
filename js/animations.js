@@ -16,7 +16,7 @@ gsap.to("#hire-me",{
 gsap.to(".skills", {
     scrollTrigger: {
         trigger: ".container .img",
-        start: "top top",
+        start: "top center",
         toggleActions: "restart play reverse reset"
     },
     backgroundColor: "#fff",
@@ -30,6 +30,15 @@ gsap.from(".showcase", {
     },
     color: "#000",
     backgroundColor: "#fff",
+    druation:1,
+});
+gsap.to(".showcase h1", {
+    scrollTrigger: {
+        trigger: ".showcase",
+        start: "top center",
+        toggleActions: "restart play none reset"
+    },
+    color: "#fff",
     druation:1,
 });
 gsap.from(".myskills .card", {

@@ -217,6 +217,7 @@ nav .menu-btn .burger2 {
 }
 
 .aboutme-container .brief-info {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,6 +291,7 @@ nav .menu-btn .burger2 {
 }
 
 .container .info h1 {
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2rem, 5vw, 5rem);
 }
@@ -339,19 +341,12 @@ nav .menu-btn .burger2 {
 
 .skills {
   position: relative;
-  height: auto;
+  min-height: 100%;
   width: 100%;
   color: #4d4dff;
   font-family: "Montserrat", sans-serif;
   background-color: #ccdfff;
   margin-top: 10vh;
-}
-
-@media (min-width: 840px) {
-  .skills {
-    max-height: 100vh;
-    overflow: hidden;
-  }
 }
 
 .skills .myskills {
@@ -447,15 +442,26 @@ nav .menu-btn .burger2 {
 }
 
 .skills .myskills .card .info h1 {
+  text-align: left;
   color: #4d4dff;
   margin-left: 1rem;
 }
 
 .skills .myskills .card .info p {
+  text-align: left;
   color: #000;
   margin: 1rem;
   letter-spacing: 0.1em;
   font-size: 0.9rem;
+}
+
+.skills .myskills .card .info p img {
+  margin-left: 1rem;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50px;
+  width: 50px;
 }
 
 .showcase {
