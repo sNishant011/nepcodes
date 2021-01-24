@@ -50,7 +50,13 @@ $mobile: 600px;
   ::-webkit-scrollbar-thumb:hover {
     background: color(primary-dark); 
   }
-
+  h1{ 
+    text-align: center;
+    font-size: clamp(30px, 4vw, 5vw);
+    font-family: 'Montserrat', sans-serif;
+    color: #005DFF;
+    margin: 0;
+  }
 body, html{
     box-sizing: border-box;
     width: 100%;
@@ -167,10 +173,25 @@ nav{
 
 .aboutme-container{
     background-color: #005DFF;
-    height: auto;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
-
+    #animate{
+        margin-top: 2vh;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        z-index: 0;
+        position: absolute;
+        overflow: hidden;
+        .section{
+            height: 100%;
+            width: 100%;
+            background-color: color(accent);
+    
+        }
+    }
     #hire-me{
         color: #fff;
         font-family: 'Montserrat', cursive;
@@ -190,6 +211,9 @@ nav{
         align-items: center;
         font-family: 'Montserrat', sans-serif;
         color: #fff;
+        top: 5vh;
+        
+        
         p{
             padding: 1rem;
             font-size: .75rem;
@@ -921,4 +945,8 @@ nav{
         
     }
  
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

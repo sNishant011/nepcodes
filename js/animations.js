@@ -1,4 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.to(".section",3, {
+    width: "0px",
+    ease: Expo.easeInOut,
+});
+
 gsap.to("#hire-me",{
     scrollTrigger:{
         trigger: ".messagesection",
@@ -45,7 +50,8 @@ var gallerytl = gsap.timeline({
     scrollTrigger: {
         trigger: ".companies",
         start: "top center",
-        toggleActions: "restart none none none",
+        triggerHook: 0,
+        toggleActions: "restart play reverse reset"
 
     }
 });
