@@ -337,11 +337,16 @@ nav{
                 height: 100%;
             }
             @include mobile(){
-                height: 100%;
+                height: auto;
             }
             &:hover{
                 border-radius: 8px;
-                transition:border-radius 0s;
+                .info{
+                    border-right: 8px solid #005DFF;
+                    transition:all 0.2s ease-in-out;
+                }
+                
+                transition:0.5s;
                     background-color: color(primary-light);
                     .card-img{
                         img{

@@ -399,15 +399,21 @@ nav .menu-btn .burger2 {
 
 @media (max-width: 600px) {
   .skills .myskills .card {
-    height: 100%;
+    height: auto;
   }
 }
 
 .skills .myskills .card:hover {
   border-radius: 8px;
-  -webkit-transition: border-radius 0s;
-  transition: border-radius 0s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #ccdfff;
+}
+
+.skills .myskills .card:hover .info {
+  border-right: 8px solid #005DFF;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .skills .myskills .card:hover .card-img img {
