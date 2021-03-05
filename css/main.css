@@ -31,7 +31,8 @@ h1 {
   margin: 0;
 }
 
-body, html {
+body,
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -98,7 +99,8 @@ nav .menu-btn {
   cursor: pointer;
 }
 
-nav .menu-btn .burger1, nav .menu-btn .burger2 {
+nav .menu-btn .burger1,
+nav .menu-btn .burger2 {
   position: absolute;
   height: 0.2rem;
   width: 40px;
@@ -910,6 +912,7 @@ nav .menu-btn .burger2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2rem;
+  text-align: center;
   overflow: hidden;
   display: -ms-grid;
   display: grid;
@@ -931,19 +934,62 @@ nav .menu-btn .burger2 {
 }
 
 .footer a {
-  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
   color: #fff;
-  background-color: transparent;
-  margin: 0.3rem;
+  padding: 0.3rem;
+  padding-left: 0;
+  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50px;
+  z-index: 1;
 }
 
-.footer a li {
-  text-align: center;
-  list-style-type: none;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  padding: 0.2rem;
-  letter-spacing: 0.1rem;
+.footer a img {
+  height: 20px;
+  top: 0.25rem;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.footer a::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  left: -5px;
+  bottom: 0px;
+  width: 110%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
+}
+
+.footer a:hover {
+  color: #005dff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer a:hover::after {
+  color: #fff;
+  left: -15%;
+  bottom: 0px;
+  width: 130%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 50px;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
 }
 
 .footer .logo-quote {
@@ -966,8 +1012,137 @@ nav .menu-btn .burger2 {
 }
 
 .footer .navigations {
-  margin-left: 1rem;
   color: #fff;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .navigations a {
+  width: 100%;
+  color: #fff;
+  padding: 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.footer .navigations a img {
+  height: 20px;
+  top: 0.25rem;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.footer .navigations a::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  left: -5px;
+  bottom: 0px;
+  width: 110%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
+}
+
+.footer .navigations a:hover {
+  color: #005dff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer .navigations a:hover::after {
+  color: #fff;
+  left: -15%;
+  bottom: 0px;
+  width: 130%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 50px;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.social-links {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-links a {
+  width: 100%;
+  color: #fff;
+  padding: 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.social-links a img {
+  height: 20px;
+  top: 0.25rem;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.social-links a::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  left: -5px;
+  bottom: 0px;
+  width: 110%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
+}
+
+.social-links a:hover {
+  color: #005dff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover::after {
+  color: #fff;
+  left: -15%;
+  bottom: 0px;
+  width: 130%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 50px;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
 }
 
 #hire-me {

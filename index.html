@@ -1,256 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-              <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Home | Nishant Shrestha</title>
 </head>
-<body> 
-  <nav id="navbar">
-    <div class="logo"><a href="index.html"><img src="img/logo.png"> </a> </div>
-    <div class="menu-btn">
-      <span class="burger1"></span>
-      <span class="burger2"></span>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"> </a>
+        </div>
+        <div class="menu-btn">
+            <span class="burger1"></span>
+            <span class="burger2"></span>
+        </div>
+    </nav>
+    <div class="menu-overlay">
+        <span id="close" style="font-size: 2rem;">&#10006;</span>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="portfolio.html">My Portfolio</a> </li>
+            <li> <a href="about.html">About Me</a> </li>
+            <li> <a href="contact.html">Contact Me</a> </li>
+        </ul>
     </div>
-  </nav>
-  <div class="menu-overlay">
-    <span id="close" style="font-size: 2rem;">&#10006</span>
-    <ul>
-      <li> <a href="index.html">Home</a> </li>
-      <li> <a href="portfolio.html">My Portfolio</a> </li>
-      <li> <a href="about.html">About Me</a> </li>
-      <li> <a href="contact.html">Contact Me</a> </li>
-    </ul>
-  </div>
-  <div class="container">
-    
+    <div class="container">
 
-    <div class="info" data-aos="fade-right"
-    data-aos-anchor-placement="top-center" data-aos-duration="1000">
-      <h1>Hi! I'm<br><span id="textchange"></span></h1>
-      <p>
-        I can make Beautiful site <br>  For your Amazing Business.
 
-      </p>
-    
-    </div><div class="img">
-  <img src="img/svg/laptop.png"  data-aos="fade-up"
-  data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="1000">
-</div>
-  </div>
-  <div class="skills">
-    <h1 style="text-align: center; font-size: 2.5rem; padding-top: 1rem; font-family: 'Montserrat', sans-serif;">My skills</h1>
-    <div class="myskills">
-      <div class="card">
-        <div class="card-img">
-          <img src="img/svg/design.svg">
-        </div>
-        <div class="info">
-          <h1>UI/UX</h1>
-          <p>
-            UI/UX has always been my first priority because first impression is the last impression.
-            Stressless eye catching modern design is what I prefer.<br>
-            <br>
-            <img src="img/svg/adobexd.svg">
-            <img src="img/svg/figma-seeklogo.com.svg">
-            <img src="img/svg/photoshop-cc-4.svg">
-            <img src="img/svg/adobe-illustrator-cc.svg">
-          </p>
+        <div class="info" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+            <h1>Hi! I'm<br><span id="textchange"></span></h1>
+            <p>
+                I can make Beautiful site <br> For your Amazing Business.
+
+            </p>
 
         </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="img/svg/frontend.svg">
+        <div class="img">
+            <img src="img/svg/laptop.png" alt="laptop-svg" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="1000">
         </div>
-        <div class="info">
-          <h1>Frontend</h1>
-          <p>
-            Briging the design into action. Converting design into website. Interactive visuals with lifelike animations.<br><br>
-            <img src="img/svg/html5.svg">
-            <img src="img/svg/css.svg">
-            <img src="img/svg/sass.svg">
-            <img src="img/svg/js.svg">
-            <img src="img/svg/bootstrap.svg">
-          </p>
-        </div>
-
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="img/svg/backend.svg">
-        </div>
-        <div class="info">
-          <h1>Backend </h1>
-          <p>
-            Why just static when I have nice grip on Django? Lets make it dynamic. I love it when content of website updates like our life.
-          <br><br>
-          <img src="img/svg/python.svg">
-          <img src="img/svg/django.svg">
-          </p>
-        </div>
-
-      </div>
-  </div>
-  </div>
-  </div>
-  <div class="showcase">
-    <h1 style="text-align: center;font-size: 2.5rem; padding-top: 1rem; font-family: 'Montserrat', sans-serif; margin-top: 0;">My Recent Works </h1>
-    <br>
-    <a href="#" style="text-decoration: underline;">Featured Works</a>
-    <a href="portfolio.html" style="float: right; right: 0;">See all works</a>
-    <div class="projects">
-      <div class="card" data-aos="fade-up">
-        <div class="card-img">
-          <img src="img/other/envisioner.png">
-        </div>
-        <div class="info">
-          <h1>The Envisioners Nepal</h1>
-          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.
-          </p>
-          <a href="#">Open Live</a>
-
-        </div>
-      </div>
-      <div class="card" data-aos="fade-up">
-        <div class="card-img">
-          <img src="img/other/snphotos.png">
-        </div>
-        <div class="info">
-          <h1>SN Photos </h1>
-          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.</p>
-          <a href="#">Open Live</a>
-
-        </div>
-
-      </div>
-      <div class="card" data-aos="fade-up">
-        <div class="card-img">
-          <img src="img/other/ebakery.png">
-        </div>
-        <div class="info">
-          <h1>EBakery </h1>
-          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.</p>
-          <a href="#">Open Live</a>
-
-        </div>
-
-      </div>
-  </div>
-  </div>
-  <div class="companies">
-    <h1>Proud To Work with these <span style="text-decoration: underline;">Awesome</span> clients</h1>
-  <img src="img/other/ebakeryss.png" id="ebakeryl">
-  <img src="img/other/SNPhotoslogo.png" id="snphotosl">
-  <img src="img/other/logo.png" id="nepcodel">
-  <img src="img/other/en.png" id="envisionerl">
-  <a href="#msgsection">Hire me?</a>
-  </div>
-  <div class="messagesection" id="msgsection">
-    <h1>Send a Message</h1>
-  <div class="message">
-    <div class="messageimg"><img src="img/other/postit-1975188_1920.png" alt="img"> </div>
-    <div class="messageform">
-      <h1 style="font-size:clamp(30px, 2.5rem, 3.5vw);">Get in Touch</h1>
-      <div class="form-wrapper">
-
-        <form action="" class="form">
-          <div class="form-group">
-            <label class="form-label" for="first">Name</label>
-            <input id="first" class="form-input" type="text" required/>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="last">Email</label>
-            <input id="last" type="email" class="form-input"/>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="color">Phone</label>
-            <input id="color" type="tel" class="form-input" required/>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="color">Your Message</label>
-            <input id="color" type="text" class="form-input" required/>
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </div>
     </div>
-  </div></div>
-  <div class="footer">
-    <div class="logo-quote">
-      <center><img src="img/other/whitelogo.png"><p>Happy Coding. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> </center>  </div>
-    <div class="navigations">
-      <a href="#"> <li>Home</li> </a>
-      <a href="#"> <li>My Portfolio</li> </a>
-      <a href="#"> <li>About Me</li> </a>
-      <a href="#"> <li>Contact Me</li> </a>
+    <div class="skills">
+        <h1 style="text-align: center; font-size: 2.5rem; padding-top: 1rem; font-family: 'Montserrat', sans-serif;">My skills</h1>
+        <div class="myskills">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/svg/design.svg" alt="design">
+                </div>
+                <div class="info">
+                    <h1>UI/UX</h1>
+                    <p>
+                        UI/UX has always been my first priority because first impression is the last impression. Stressless eye catching modern design is what I prefer.<br>
+                        <br>
+                        <img src="img/svg/adobexd.svg" alt="adobe-xd logo">
+                        <img src="img/svg/figma-seeklogo.com.svg" alt="figma-logo">
+                        <img src="img/svg/photoshop-cc-4.svg" alt="photoshop-logo">
+                        <img src="img/svg/adobe-illustrator-cc.svg" alt="illustrator logo">
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/svg/frontend.svg" alt="frontend">
+                </div>
+                <div class="info">
+                    <h1>Frontend</h1>
+                    <p>
+                        Briging the design into action. Converting design into website. Interactive visuals with lifelike animations.<br><br>
+                        <img src="img/svg/html5.svg" alt="html">
+                        <img src="img/svg/css.svg" alt="css">
+                        <img src="img/svg/sass.svg" alt="scss">
+                        <img src="img/svg/js.svg" alt="javascript">
+                        <img src="img/svg/bootstrap.svg" alt="bootstrap">
+                    </p>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/svg/backend.svg" alt="backend">
+                </div>
+                <div class="info">
+                    <h1>Backend </h1>
+                    <p>
+                        Why just static when I have nice grip on Django? Lets make it dynamic. I love it when content of website updates like our life.
+                        <br><br>
+                        <img src="img/svg/python.svg" alt="python">
+                        <img src="img/svg/django.svg" alt="django">
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div class="social-links">
-      
-      <a href="#"> <li>Facebook</li> </a>
-      <a href="#"> <li>Instagram</li> </a>
-      <a href="#"> <li>Upwork</li> </a>
-      <a href="#"> <li>Youtube</li> </a>
+    <div class="showcase">
+        <h1 style="text-align: center;font-size: 2.5rem; padding-top: 1rem; font-family: 'Montserrat', sans-serif; margin-top: 0;">My Recent Works </h1>
+        <br>
+        <a href="#" style="text-decoration: underline;">Featured Works</a>
+        <a href="portfolio.html" style="float: right; right: 0;">See all works</a>
+        <div class="projects">
+            <div class="card" data-aos="fade-up">
+                <div class="card-img">
+                    <img src="img/other/envisioner.png" alt="envisioner">
+                </div>
+                <div class="info">
+                    <h1>The Envisioners Nepal</h1>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.
+                    </p>
+                    <a href="https://www.theenvisionersnepal.ml" target="_blank">Open Live</a>
+
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-img">
+                    <img src="img/other/snphotos.png" alt="snphotos">
+                </div>
+                <div class="info">
+                    <h1>SN Photos </h1>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.</p>
+                    <a href="http://www.snphotos.epizy.com" target="_blank">Open Live</a>
+
+                </div>
+
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-img">
+                    <img src="img/other/ebakery.png" alt="ebakery">
+                </div>
+                <div class="info">
+                    <h1>EBakery </h1>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofcluding versions of Lorem Ipsum.</p>
+                    <a href="http://www.ebakery.epizy.com" target="_blank">Open Live</a>
+
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-  <script type="text/javascript">
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-80px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-  </script>
-    <script type="text/javascript" src="js/typewriter.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-<script>
-  const openBtn = document.querySelector('.menu-btn');
-  const overlay = document.querySelector('.menu-overlay');
-  const closeBtn = document.querySelector('#close');
-  var tl = gsap.timeline({defaults:{duration: 1, ease: Circ.easeOut, }})
-  tl.paused(true);
-  tl.to(".menu-overlay",1, {clipPath: 'circle(100%)'})
+    <div class="companies">
+        <h1>Proud To Work with these <span style="text-decoration: underline;">Awesome</span> clients</h1>
+        <img src="img/other/ebakeryss.png" id="ebakeryl" alt="ebakery">
+        <img src="img/other/SNPhotoslogo.png" id="snphotosl" alt="snphotos">
+        <img src="img/other/logo.png" id="nepcodel" alt="nepcodes">
+        <img src="img/other/en.png" id="envisionerl" alt="envisioner">
+        <a href="#msgsection">Hire me?</a>
+    </div>
+    <div class="messagesection" id="msgsection">
+        <h1>Send a Message</h1>
+        <div class="message">
+            <div class="messageimg"><img src="img/other/postit-1975188_1920.png" alt="img"> </div>
+            <div class="messageform">
+                <h1 style="font-size:clamp(30px, 2.5rem, 3.5vw);">Get in Touch</h1>
+                <div class="form-wrapper">
 
-  tl.from("ul li",1, {opacity:0, x:'100px', stagger:0.5}, "-=1")
+                    <form action="" class="form">
+                        <div class="form-group">
+                            <label class="form-label" for="first">Name</label>
+                            <input id="first" class="form-input" type="text" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="last">Email</label>
+                            <input id="last" type="email" class="form-input" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="color">Phone</label>
+                            <input id="color" type="tel" class="form-input" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="color">Your Message</label>
+                            <input id="color" type="text" class="form-input" required/>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo-quote">
+            <center><img src="img/other/whitelogo.png" alt="logo">
+                <p>Happy Coding. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </center>
+        </div>
+        <div class="navigations">
+            <a href="#">
+                Home
+            </a><br>
+            <a href="#">
+                My Portfolio
+            </a><br>
+            <a href="#">
+                About Me
+            </a><br>
+            <a href="#">
+               Contact Me
+            </a>
+        </div>
+        <div class="social-links">
 
-  openBtn.addEventListener('click', () => {
-    tl.play();
-  })
-  closeBtn.addEventListener('click', () => {
-    tl.reverse();
-  })
-</script><script>
-  $('input').focus(function(){
-  $(this).parents('.form-group').addClass('focused');
-});
+            <a href="#">
+                Facebook
+            </a><br>
+            <a href="#">
+                Instagram
+            </a><br>
+            <a href="#">
+               Youtube
+            </a><br>
+            <a href="#">
+              Upwork
+            </a>
+        </div>
+    </div>
+    <script >
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script  src="js/typewriter.js"></script>
+    <script  src="js/index.js"></script>
+    <script>
+        const openBtn = document.querySelector('.menu-btn');
+        const overlay = document.querySelector('.menu-overlay');
+        const closeBtn = document.querySelector('#close');
+        var tl = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: Circ.easeOut,
+            }
+        })
+        tl.paused(true);
+        tl.to(".menu-overlay", 1, {
+            clipPath: 'circle(100%)'
+        })
 
-$('input').blur(function(){
-  var inputValue = $(this).val();
-  if ( inputValue == "" ) {
-    $(this).removeClass('filled');
-    $(this).parents('.form-group').removeClass('focused');  
-  } else {
-    $(this).addClass('filled');
-  }
-})  
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<script type="text/javascript" src="js/animations.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="js/smooth-scroll.js"></script>
+        tl.from("ul li", 1, {
+            opacity: 0,
+            x: '100px',
+            stagger: 0.5
+        }, "-=1")
 
-  </body>
+        openBtn.addEventListener('click', () => {
+            tl.play();
+        })
+        closeBtn.addEventListener('click', () => {
+            tl.reverse();
+        })
+    </script>
+    <script>
+        $('input').focus(function() {
+            $(this).parents('.form-group').addClass('focused');
+        });
+
+        $('input').blur(function() {
+            var inputValue = $(this).val();
+            if (inputValue == "") {
+                $(this).removeClass('filled');
+                $(this).parents('.form-group').removeClass('focused');
+            } else {
+                $(this).addClass('filled');
+            }
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script  src="js/animations.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/smooth-scroll.js"></script>
+
+</body>
+
 </html>
